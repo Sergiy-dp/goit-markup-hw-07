@@ -21,7 +21,7 @@
   <body class="site-body">
     <!-- шапка сторінки -->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="/"
             >Web<span class="header-word word">Studio</span></a
@@ -32,7 +32,7 @@
             <li class="header-item">
               <a class="header-link link current" href="./index.html">Studio</a>
             </li>
-            <li class="header- item">
+            <li class="header-item">
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
@@ -40,6 +40,12 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open">
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/icons.svg#icon_burger"></use>
+          </svg>
+        </button>
+
         <!-- пошта,телефон -->
         <a class="header-mail link" href="mailto:info@devstudio.com"
           >info@devstudio.com</a
@@ -47,6 +53,54 @@
         <a class="header-tel link" href="tel:+110001111111"
           >+11 (000) 111-11-11</a
         >
+      </div>
+      <div class="mobile-menu">
+        <div class="mobail-menu_menu-container">
+          <button class="mobile-menu_close-btn">
+            <svg class="mobile-menu_close-icon" width="8" heigth="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Studio</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Portfolio</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Contacts</a></li>
+          </ul>
+          <ul class="mobile-menu-nav">
+            <li class="mobile-menu-item"><a href="" class="mobile-tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-menu-soc">
+            <li class="mobail-menu-soc-item">
+              <a href="" class="mobail-menu-soc-link">
+                <svg class="mobile-menu-soc-icon"width="24" heigth="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobail-menu-soc-item">
+              <a href="" class="mobail-menu-soc-link">
+                <svg class="mobile-menu-soc-icon"width="24" heigth="24">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobail-menu-soc-item">
+              <a href="" class="mobail-menu-soc-link">
+                <svg class="mobile-menu-soc-icon"width="24" heigth="24">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobail-menu-soc-item">
+              <a href="" class="mobail-menu-soc-link">
+                <svg class="mobile-menu-soc-icon"width="24" heigth="24">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div >
       </div>
     </header>
     <main>
