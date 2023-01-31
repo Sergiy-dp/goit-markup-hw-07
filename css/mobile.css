@@ -13,8 +13,7 @@
   .header-tel {
     display: none;
   }
-}
-/*------------ HERO ------------- */
+  /*------------ HERO ------------- */
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -43,7 +42,8 @@
   letter-spacing: 0.02em;
   color: var(--first-title-color);
   padding-top: 112px;
-   margin-bottom: 72px;
+max-width: 318px;
+  margin-bottom: 72px;
   
 }
 .hero-btn {
@@ -71,3 +71,4 @@
   border-radius: 4px;
 }
 /*------------ HERO ------------- */
+}
