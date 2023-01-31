@@ -61,38 +61,9 @@ body {
 .container {
   padding-left: 16px;
   padding-right: 16px;
-  background-color: tomato;
+  /* background-color: tomato;  */
 }
 
-@media screen and (min-width: 428px) {
-  .container {
-    width: 396px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header-list {
-    display: none;
-  }
-  .header-mail,
-  .header-tel {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 736px;
-  }
-  .mobile-menu-open {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
 .mobile-menu-open {
   padding: 0;
   background-color: transparent;
@@ -145,9 +116,21 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
-.mobail-menu_menu-container {
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobail-menu-container {
   position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 .mobile-menu_close-btn {
   position: absolute;
@@ -163,11 +146,72 @@ body {
   width: 24px;
   height: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 .mobile-menu_close-icon {
 }
+.mobile-menu-list {
+  /* display: flex;
+  flex-direction: column;
+  gap: 25px; */
+}
+.mobile-menu-item {
+  margin-bottom: 40px;
+}
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.mobile-menu-link:hover {
+  color: var(--second-hover-color);
+}
+.mobile-menu-nav-list {
+  margin-top: 284px;
+}
+.mobile-tel-link {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: capitalize;
+  color: var(--accent-title-color);
+}
+.mobile-mail-link {
+  margin-bottom: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--mail-tel-color);
+}
+.mobile-menu-soc-list {
+  display: flex;
+  justify-content: space-between;
+}
+.mobail-menu-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.mobail-menu-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--first-bg-btn-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-soc-icon {
+}
 /*------------ mobile------------ */
+
+/* ------------TABLET------------ */
 
 /* .container {
   width: 1158px;
@@ -271,59 +315,7 @@ body {
 
 /*------------ HERO ------------- */
 
-.hero {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero_bg.jpg);
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1440px;
-  padding-top: 190px;
-  padding-bottom: 185px;
-}
-.hero > .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.hero-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 56px;
-  line-height: calc(60 / 56);
-  letter-spacing: 0.02em;
-  color: var(--first-title-color);
-
-  margin-bottom: 45px;
-  max-width: 496px;
-}
-.hero-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.04em;
-  color: var(--first-btn-color);
-  background-color: var(--first-bg-btn-color);
-  cursor: pointer;
-
-  min-width: 169px;
-  height: 59px;
-  border-radius: 4px;
-  border-color: transparent;
-  display: line-block;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  color: var(--first-btn-color);
-  background-color: var(--second-bg-btn-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
 
 .strategy {
   padding-top: 123px;
