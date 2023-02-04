@@ -1,12 +1,197 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 768px;
   }
   .mobile-menu-open {
     display: none;
   }
+
+  /* ------------HEADER------------- */
+  .header {
+    background-color: var(--first-bg-color);
+    padding-top: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e9fc;
+  }
+  .header-logo {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-title-color);
+    margin-right: 120px;
+  }
+  .header-word {
+    color: var(--second-title-color);
+  }
+  .header > .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-item {
+  }
+  .header-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    bottom: -131%;
+    display: flex;
+    background-color: var(--accent-title-color);
+    border-radius: 2px;
+  }
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--second-hover-color);
+  }
+
+  .header-mail:visited .header-tel:visited {
+    color: fuchsia;
+  }
+
+  .header-mail {
+    font-size: 12px;
+  }
+  .header-tel {
+    font-size: 12px;
+  }
+
+  .header-mail:hover,
+  .header-mail:focus,
+  .header-tel:hover,
+  .header-tel:focus {
+    color: var(--second-hover-color);
+  }
+  .header-grap-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-mail-item {
+  }
+
+  /*------------ HERO ------------- */
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero_bg_tablet.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px;
+    padding-top: 109px;
+    padding-bottom: 108px;
+    /* height: 432px; */
+  }
+
   .hero-title {
-font-size: 56px;
-  line-height: calc(60 / 56);
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  /* ----------strategy------------- */
+
+  .features-icon {
+    display: none;
+  }
+  .strategy > .container {
+    width: 768px;
+  }
+  .strategy-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 72px 24px;
+  }
+
+  .strategy-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+  .strategy-icon {
+  }
+  .strategy-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    margin-bottom: 8px;
+    text-align: start;
+  }
+  .strategy-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--rest-text-color);
+    width: 100%;
+  }
+  /* ---------team---------------- */
+
+  .team {
+    /* width: 768px; */
+  }
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+  /* ----------customer-------------- */
+
+  .Customers > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .customers-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+  }
+  .customers-item {
+    width: 168px;
+  }
 }
-/*------------ HERO ------------- */
+
+@media screen and (max-width: 1199px) {
+  /* ----------works------------ */
+  .works {
+    display: none;
+  }
+}
