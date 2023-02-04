@@ -4,7 +4,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  
 }
+
 @media screen and (max-width: 767px) {
   .header-list {
     display: none;
@@ -13,62 +15,239 @@
   .header-tel {
     display: none;
   }
-  /*------------ HERO ------------- */
-.hero {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero_bg_mobile.jpg);
+  .header {
+    background-color: var(--first-bg-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
+  }
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 428px;
-  padding-top: 0px;
-  /* padding-bottom: 432px; */
-  height: 432px;
+  /*------------ HERO ------------- */
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero_bg_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 428px;
+    padding-top: 0px;
+    height: 432px;
+  }
+  .hero > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    letter-spacing: 0.02em;
+    color: var(--first-title-color);
+    padding-top: 112px;
+    margin-bottom: 72px;
+    width: 340px;
+  }
+  .hero-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--first-btn-color);
+    background-color: var(--first-bg-btn-color);
+    cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border-color: transparent;
+    display: line-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-btn:hover,
+  .hero-btn:focus {
+    color: var(--first-btn-color);
+    background-color: var(--second-bg-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  /*------------ HERO ------------- */
+  /* ----------strategy------------- */
+  .strategy > .container {
+    justify-content: center;
+    
+
+    
+  }
+  .strategy {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .features-icon {
+    display: none;
+  }
+  .strategy > .container {
+    display: flex;
+  }
+  .strategy-title {
+  }
+  .strategy-list {
+    display: flex;
+    gap: 72px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .strategy-item {
+  }
+  .strategy-icon {
+  }
+  .strategy-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .strategy-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--rest-text-color);
+    width: 100%;
+  }
+  /* ----------works------------ */
+  .works {
+    display: none;
+  }
+  /* ---------team---------------- */
+
+  .team {
+    background-color: var(--second-bg-color);
+    padding-bottom: 96px;
+    padding-top: 128px;
+    /* width: 428px; */
+  }
+  .team > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+  }
+  .team-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--first-btn-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  .team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  .team-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--rest-text-color);
+    margin-bottom: 8px;
+  }
+
+  .team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .team-soc-item {
+    width: 40px;
+    height: 40px;
+  }
+  .team-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--first-bg-btn-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-soc-icon {
+  }
+  .team-soc-link:hover,
+  .team-soc-link:focus {
+    background-color: var(--second-bg-btn-color);
+  }
+/* ----------customer-------------- */
+
+.Customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-.hero > .container {
+.Customers > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-.hero-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(40 / 36);
-  letter-spacing: 0.02em;
-  color: var(--first-title-color);
-  padding-top: 112px;
-max-width: 318px;
-  margin-bottom: 72px;
+  justify-content: center;
+  width: 425px;
+
   
 }
-.hero-btn {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--first-btn-color);
-  background-color: var(--first-bg-btn-color);
-  cursor: pointer;
+.customers-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 72px;
+}
+.customers-item {
+  width: 188px;
+  }
 
-  min-width: 169px;
-  height: 56px;
-  border-radius: 4px;
-  border-color: transparent;
-  display: line-block;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* -----------FOOTER----------------- */
+.footer > .container {
+  display: flex;
+  /* width: 425px; */
 }
-.hero-btn:hover,
-.hero-btn:focus {
-  color: var(--first-btn-color);
-  background-color: var(--second-bg-btn-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-/*------------ HERO ------------- */
+
+
+
+
+
+
+
 }
