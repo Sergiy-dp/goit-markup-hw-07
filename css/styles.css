@@ -323,7 +323,6 @@ body {
   color: var(--second-hover-color);
 }
 /*------------ HERO ------------- */
-
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -333,9 +332,7 @@ body {
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px;
-  padding-top: 190px;
-  padding-bottom: 185px;
+  background-size: 428px;
 }
 .hero > .container {
   display: flex;
@@ -345,26 +342,27 @@ body {
 }
 .hero-title {
   font-family: "Roboto", sans-serif;
-  font-size: 56px;
-  line-height: calc(60 / 56);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
   letter-spacing: 0.02em;
   color: var(--first-title-color);
-
-  margin-bottom: 45px;
-  max-width: 496px;
+  /* padding-top: 112px;
+    margin-bottom: 72px; */
+  width: 340px;
 }
 .hero-btn {
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--first-btn-color);
   background-color: var(--first-bg-btn-color);
   cursor: pointer;
 
   min-width: 169px;
-  height: 59px;
+  height: 56px;
   border-radius: 4px;
   border-color: transparent;
   display: line-block;
@@ -377,6 +375,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+/*------------ HERO ------------- */
+
 /*------------ HERO ------------- */
 
 .strategy {
@@ -620,7 +620,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
-  width: 264px;
   margin-top: 16px;
 }
 
