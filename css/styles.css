@@ -131,14 +131,13 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
 }
 .mobail-menu-container {
   position: relative;
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
-  }
+}
 .mobile-menu > .container {
   height: 100%;
   display: flex;
@@ -245,7 +244,7 @@ body {
   padding-bottom: 24px; */
   border-bottom: 1px solid #e7e9fc;
 }
-*/ .header-logo {
+.header-logo {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
@@ -328,6 +327,7 @@ body {
   color: var(--second-hover-color);
 }
 /*------------ HERO ------------- */
+
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -338,6 +338,17 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 428px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero_bg_mobile_2x.jpg);
+  }
 }
 .hero > .container {
   display: flex;
@@ -709,7 +720,7 @@ body {
 .footer-form-input:focus {
   outline: none;
   border-color: var(--accent-title-color);
-  
+
   color: #e7e9fc;
 }
 .footer-form-submit {
@@ -886,8 +897,6 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
-  
 }
 .modal {
   position: absolute;
