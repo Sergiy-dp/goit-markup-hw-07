@@ -23,7 +23,7 @@
 
   <body class="site-body">
     <!-- шапка сторінки -->
-        <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="/"
@@ -33,10 +33,12 @@
 
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link " href="./index.html">Studio</a>
+              <a class="header-link link" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link current" href="./portfolio.html">Portfolio</a>
+              <a class="header-link link current" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
@@ -137,7 +139,6 @@
     </header>
     <main>
       <section class="about">
-        
         <!-- Фільтр -->
         <div class="container">
           <ul class="about-list list">
@@ -165,12 +166,35 @@
             <li class="page-item">
               <a class="page-link link" href="">
                 <div class="page-link-img-wrapper">
-                  
-                  <img
-                    width="360"
-                    src="./images/Card_Content1.jpg"
-                    alt="pages of the phone screen"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Card_Content1.jpg    1x,
+                        ./images/Card_Content1_2x.jpg 2x
+                      "
+                      media="min-width: 1200px"
+                    />
+                    <source
+                      srcset="
+                        ./images/Card_Content1.jpg    1x,
+                        ./images/Card_Content1_2x.jpg 2x
+                      "
+                      media="min-width: 768px"
+                    />
+                    <source
+                      srcset="
+                        ./images/Card_Content1_mobi        1x,
+                        ./images/Card_Content1_mobi_2x.jpg 2x
+                      "
+                      media="min-width: 320px"
+                    />
+                    <img
+                      width="396"
+                      src="./images/Card_Content1.jpg"
+                      alt="pages of the phone screen"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -355,7 +379,7 @@
         </div>
       </section>
     </main>
-        <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <a class="footer-logo link" href=""
@@ -516,6 +540,6 @@
       </div>
     </div>
     <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script> 
+    <script src="./js/modal.js"></script>
   </body>
 </html>
