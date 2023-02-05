@@ -34,6 +34,17 @@
     padding-top: 185px;
     padding-bottom: 185px;
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero_bg_desktop_2x.jpg);
+  }
+}
 
   .hero-title {
     width: 496px;
@@ -147,7 +158,6 @@
   }
   .footer-form {
     margin-left: 80px;
-    
   }
   .footer-form-wrapper {
     margin-left: auto;
