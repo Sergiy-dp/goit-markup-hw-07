@@ -23,8 +23,8 @@
 
   <body class="site-body">
     <!-- шапка сторінки -->
-    <header class="header">
-      <div class="container">
+        <header class="header">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="/"
             >Web<span class="header-word word">Studio</span></a
@@ -33,29 +33,111 @@
 
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link link current" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link current" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/icons.svg#icon_burger"></use>
+          </svg>
+        </button>
+
         <!-- пошта,телефон -->
-        <a class="header-mail link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="header-tel link" href="tel:+110001111111"
-          >+11 (000) 111-11-11</a
-        >
+        <ul class="header-grap-list list">
+          <li class="header-mail-item item">
+            <a class="header-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-mail-item item">
+            <a class="header-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!------------ mobile-menu --------------->
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container mobail-menu-container">
+          <button class="mobile-menu_close-btn" data-menu-close>
+            <svg class="mobile-menu_close-icon" width="8" heigth="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <div class="mobile-wenu-wrap-up">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link link">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./portfolio.html" class="mobile-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobail-menu-wrap-bottom">
+            <ul class="mobile-menu-nav-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-mail-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu-soc-list list">
+              <li class="mobail-menu-soc-item">
+                <a href="#" class="mobail-menu-soc-link">
+                  <svg class="mobile-menu-soc-icon" width="24" heigth="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobail-menu-soc-item">
+                <a href="" class="mobail-menu-soc-link">
+                  <svg class="mobile-menu-soc-icon" width="24" heigth="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobail-menu-soc-item">
+                <a href="" class="mobail-menu-soc-link">
+                  <svg class="mobile-menu-soc-icon" width="24" heigth="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobail-menu-soc-item">
+                <a href="" class="mobail-menu-soc-link">
+                  <svg class="mobile-menu-soc-icon" width="24" heigth="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="about">
+        
         <!-- Фільтр -->
         <div class="container">
           <ul class="about-list list">
@@ -272,7 +354,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+        <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <a class="footer-logo link" href=""
@@ -316,6 +398,7 @@
             </li>
           </ul>
         </div>
+
         <form action="#" class="footer-form">
           <div class="footer-form-wrapper">
             <label for="footer_user_email" class="footer-form-field">
@@ -327,7 +410,6 @@
                 type="email"
                 id="footer_user_email"
                 name="user_email"
-                pattern="^[a-zA-Zа-яА-Я]+$"
                 minlength="2"
                 placeholder="E-mail"
               />
@@ -342,5 +424,97 @@
         </form>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal_close_btn" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-form-name-wrapper">
+            <label for="user_name" class="modal-form-field">
+              <span class="modal-form-text">Name</span></label
+            >
+            <span class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_name"
+                id="user_name"
+                required
+                pattern="^[a-zA-Zа-яА-Я]+$"
+                minlength="2"
+              />
+              <svg class="modal-icon-input" width="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="modal-form-name-wrapper">
+            <label for="user_phone" class="modal-form-field">
+              <span class="modal-form-text">Phone</span></label
+            >
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user_phone"
+                id="user_phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+
+              <svg class="modal-icon-input" width="13" height="13">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="modal-form-name-wrapper">
+            <label for="user_email" class="modal-form-field">
+              <span class="modal-form-text">Email</span></label
+            >
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user_email"
+                id="user_email"
+                class="modal-form-input"
+              />
+
+              <svg class="modal-icon-input" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </span>
+          </div>
+
+          <label class="modal-form-field">
+            <span class="modal-form-text">Comment</span>
+            <textarea
+              name="user_message"
+              class="modal-form-message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user_policy"
+            class="modal-form-check visually-hidden"
+          />
+          <label for="user-policy" class="modal-form-check-desc"
+            >I accept the terms and conditions of the&nbsp;
+            <a href="" class="policy">Privacy Policy</a></label
+          >
+          <button type="submit" class="modal-form-submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script> 
   </body>
 </html>
