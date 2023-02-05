@@ -207,10 +207,19 @@
           <h2 class="works-title">What are we doing</h2>
           <ul class="works-list list">
             <li>
-              <img width="360" src="./images/mac.jpg" alt="computer screen" />
+              <img
+                srcset="./images/mac.jpg 1x, ./images/mac_2x.jpg 2x"
+                width="360"
+                src="./images/mac.jpg"
+                alt="computer screen"
+              />
             </li>
             <li>
               <img
+                srcset="
+                  ./images/iPhonescreens.jpg        1x,
+                  ./images/iPhonescreens.jpg_2x.jpg 2x
+                "
                 width="360"
                 src="./images/iPhonescreens.jpg"
                 alt="iPhone screens"
@@ -218,6 +227,10 @@
             </li>
             <li>
               <img
+                srcset="
+                  ./images/images_on_the_phone_and_on_the_laptop_screen.jpg        1x,
+                  ./images/images_on_the_phone_and_on_the_laptop_screen_2x.jpg.jpg 2x
+                "
                 width="360"
                 src="./images/images_on_the_phone_and_on_the_laptop_screen.jpg"
                 alt="images on the phone and on the laptop screen"
@@ -234,6 +247,7 @@
             <li class="team-item">
               <img
                 width="264"
+                srset="./images/markguerrero.jpg 1x, ./images/markguerrero_2x.jpg 2x"
                 src="./images/markguerrero.jpg"
                 alt="photo of the man"
               />
@@ -277,6 +291,7 @@
             <li class="team-item">
               <img
                 width="264"
+                srcset="./images/tomford.jpg 1x, ./images/tomford_2x.jpg 2x"
                 src="./images/tomford.jpg"
                 alt="photo of the man"
               />
@@ -320,6 +335,10 @@
             <li class="team-item">
               <img
                 width="264"
+                srcset="
+                  ./images/camilagarcia.jpg    1x,
+                  ./images/camilagarcia_2x.jpg 2x
+                "
                 src="./images/camilagarcia.jpg"
                 alt="photo of the girl"
               />
@@ -363,6 +382,10 @@
             <li class="team-item">
               <img
                 width="264"
+                srcset="
+                  ./images/danielwilson.jpg    1x,
+                  ./images/danielwilson_2x.jpg 2x
+                "
                 src="./images/danielwilson.jpg"
                 alt="photo of the man"
               />
@@ -617,6 +640,6 @@
       </div>
     </div>
     <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script> 
+    <script src="./js/modal.js"></script>
   </body>
 </html>
