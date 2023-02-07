@@ -219,17 +219,17 @@
   }
   /* ----------customer-------------- */
 
-  .Customers {
+  .customers {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .Customers > .container {
+  .customers > .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 425px;
+    
   }
   .customers-list {
     flex-direction: row;
@@ -237,9 +237,10 @@
     justify-content: center;
     column-gap: 16px;
     row-gap: 72px;
+    
   }
   .customers-item {
-    width: 188px;
+    width: calc((100% - 16px) / 2);
   }
 
   /* -----------FOOTER----------------- */
